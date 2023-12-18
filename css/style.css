@@ -1,0 +1,1110 @@
+
+
+body{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    background-color: #fcfcf4;
+    width: 100%;
+}
+
+
+
+
+
+/**************************************STYLING AF NAVBAR TIL COMPUTER (MIN WIDTH PÅ 1024PX )**************************/
+
+
+
+  /* Styler nav */
+  
+  nav {
+    background-color: #fcfcf4;
+    height: 80px;
+    width: 100%;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+ 
+  /* Styler link i  nav */
+  
+  nav ul li a {
+    color: #254295;
+    font-size: 12px;
+  }
+  
+
+  
+  nav ul li a {
+    color: #254295;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-family:'Anton', sans-serif; ;
+
+  }
+  
+
+  /* styler  label checkbtn class */
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  
+  label.logo {
+    display: block;
+}
+
+.logo img{
+    height: 4.5rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+
+}
+
+
+  /* styler input tag  */
+  #check {
+    display: none;
+  }
+
+  /*Min burgermenu og logo skiftede plads, og dette hjalp med at få dem tilbage til deres originale plads*/
+  #check, .checkbtn, .logo ul{
+    order:2
+
+  }
+
+  /* styler label checkbtn class - display none*/
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  
+
+
+/* laver navbar position fixed */
+
+nav {
+  position: fixed;
+  top: 0;
+}
+  
+  
+
+/**************************************STYLING AF FOOTER***************************************************/
+
+footer {
+    background-color: #254295;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column; /* Ændret til kolonne-layout */
+    align-items: center; /* Centrérr elementerne vandret */
+  }
+
+  .logo-footer img{
+    height: 4rem;
+  }
+
+  .facebook-links {
+   
+    display: flex;
+  }
+
+  .facebook-links a {
+    margin-right: 10px;
+    color: #f39340;
+    text-decoration: none;
+  }
+
+  .subscribe-container {
+   
+    text-align: right;
+    flex-grow: 1; /* Tager op resten af pladsen til højre */
+  }
+
+  h3 {
+    margin-bottom: 10px;
+  }
+
+  .email-input {
+    padding: 5px;
+    width: 200px;
+  }
+
+  .subscribe-button {
+    padding: 5px 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+
+
+
+/****************************************STYLING AF MAIN********************************************************/
+
+
+/*Styling af forside på computer (1024px og derover*/
+
+.tre-daaser{
+    padding-top: 5rem;
+}
+
+.tre-daaser img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    /*Det øverste gør jeg for at centrere mit billede*/
+}
+
+.overskrift{
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+    color: #254295;
+    margin-top: 3rem;
+    
+}
+
+.orange-streg{
+     /*Her centrer jeg min tekst til den orange text box*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 48%;
+   /*Her sætter jeg en border på min div og giver den en farve og style*/
+    border-style: solid;
+    border-width: 0.20rem;
+    border-color: #f39340;
+    border-radius: 5%;
+    justify-content: center;
+}
+
+.orange-streg p{
+    font-family: 'Anton', sans-serif;
+    font-family: 'Inter', sans-serif;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+}
+
+.billeder-forside img {
+    width: 23.5%;
+    margin: 1rem;
+}
+
+.billeder-forside{
+    display: flex;
+    flex-wrap: wrap; /*rRETTET EN FEJL*/
+    justify-content: center;
+    margin: 1rem;
+}
+
+
+
+.spoergsmaal{
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #254295;
+}
+
+.kontaktos{
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: orange;
+}
+
+/*Her fjerner jeg mit ''læs mere'' og ''læs mindre'' til min computerskærm, så den kun vises i media query til mobil*/
+#ch, label{
+    display: none;
+}
+
+#chc, label{
+    display: none;
+}
+
+#chch, label{
+    display: none;
+}
+
+
+/**************************************Styling af Produkter****************************************************************************************/
+.produkt-varianter{
+    display: flex;
+    justify-content: center;
+}
+
+
+.overskrift-produkter{
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+    color: #254295;
+    padding-top: 7rem;
+}
+
+.produkter-jupiterjuice{
+    background-color: #fcfcf4;
+    width: 24.55%;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0.5rem 0.2rem;
+}
+
+.produkter-jupiterjuice img{
+    width: 100%;
+}
+
+.produkter-julemanden{
+    background-color: #fcfcf4;
+    width: 24.55%;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0.5rem 0.2rem;
+}
+
+.produkter-julemanden img{
+    width: 100%;
+}
+
+.produkter-shandy{
+    background-color: #fcfcf4;
+    width: 24.55%;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0.5rem 0.2rem;
+}
+
+.produkter-shandy img{
+    width: 100%;
+}
+   
+.produkter-shandy-link, .produkter-julemanden-link, .produkter-jupiter-link{
+    font-family: 'Anton', sans-serif;
+}
+
+
+
+/*Knapper styling*/
+
+.produkter-knap1{
+    background-color: white;
+    padding: 0.5rem;
+    border-style: solid;
+    border-width: 0.07rem;
+    margin: 0.15rem;
+    border-color: black;
+    opacity: 0,5%;
+
+}
+
+.produkter-knap1:hover{
+    background-color: orange;
+    opacity: 60%;
+}
+
+ .produkter-knap2{
+    background-color: #fcfcf4;
+}
+
+
+/*Styling af infographic*/
+
+
+.infographic img{
+    height: 55rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 48%;
+}
+
+
+/**********************************************STYLING AF PRODUKTBESKRIVELSE TIL COMPUTER***********************/
+
+
+.produktbeskrivelse-jupiterjuice{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: #fcfcf4;
+    width: 24.55%;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0.5rem 0.2rem;
+    
+}
+
+.produktbeskrivelse-jupiterjuice img{
+    width: 100%;
+}
+
+
+/************************STYLING AF EVENTS TIL COMPUTER**********************************************************/
+
+
+
+
+.overskrift-events{
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+    color: #254295;
+    padding-top: 7rem;
+    margin-bottom: 2rem;
+}
+
+.under-overskrift{
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    color: #254295;
+    margin-top: -1rem;
+    
+}
+
+.event1, .event2{
+    display: flex;
+    flex-direction: row; /*RETTET EN FEJL*/
+    margin-bottom: 5rem;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+
+}
+
+.event1 img{
+    display: flex;
+    height: 15rem;
+    width: 14rem;
+
+}
+
+.event2 img{
+    display: flex;
+    height: 15rem;
+}
+
+.events{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.events-undertitel{
+   font-weight: bolder;
+   font-size: 1rem;
+   font-family: 'Anton', sans-serif;
+}
+
+.tilmeld-knap{
+    background-color: white;
+    padding: 0.5rem;
+    border-style: solid;
+    border-width: 0.07rem;
+    margin: 0.15rem;
+    border-color: #254295;
+    opacity: 0,5%;
+    width: 9%;
+    margin-top: 3rem;
+    margin-left: 0.5rem;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+.tilmeld-knap:hover{
+    background-color: #f39340;
+    opacity: 60%;
+}
+
+
+.kontakt-knap{
+    background-color: white;
+    padding: 0.5rem;
+    border-style: solid;
+    border-width: 0.07rem;
+    margin: 0.15rem;
+    border-color: #254295;
+    opacity: 0,5%;
+    width: 14%;
+    margin-top: 0.6rem;
+    margin-left: 0.5rem;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+.kontakt-knap:hover{
+    background-color: orange;
+    opacity: 60%;
+}
+
+.event1 .card{
+    margin-left: 1.5rem;
+}
+
+/**************STYLING AF PRODUKTBESKRIVELSE****************************/
+
+.pb-container{
+    justify-content: center;
+}
+
+.pb-start{
+    display: flex;
+  flex-direction: row;
+  margin-top: 10rem;
+  justify-content: center;
+}
+
+.pb-daase img{
+    height: 25rem;
+}
+
+.txt-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pb-navn-procent{
+    font-family: 'Anton', sans-serif; ;
+    margin-top: -1rem;
+}
+
+.orange-streg-pb{
+        /*Her centrer jeg min tekst til den orange text box*/
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20rem;
+        height: 100%;
+       /*Her sætter jeg en border på min div og giver den en farve og style*/
+        border-style: solid;
+        border-width: 0.20rem;
+        border-color: #f39340;
+        border-radius: 5%;
+        
+}
+
+.humle, .lemons, .draabe{
+    height: 3rem;
+    padding: 1.2rem;
+    width: auto;
+}
+
+.pb-tekst2{
+        width: 25%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Anton', sans-serif;
+        font-family: 'Inter', sans-serif;
+}
+
+.pb-tekst2 p{
+    padding: 1rem;
+}
+
+.pb-overskrift{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-family: 'Anton', sans-serif; 
+    color: #254295;
+}
+
+.untappd-overskrift{
+    font-family: 'Anton', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #254295;
+    margin-top: 1.5rem;
+}
+
+.untappd-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: 'Anton', sans-serif; 
+}
+
+.fa-untappd{
+    color: #f39340;
+}
+
+/*Styling af ''Kontakt os''*/
+
+.kontakt-tider{
+    text-align: center;
+    font-family: 'Anton', sans-serif; 
+    font-size: 2rem;
+}
+
+.kontakt img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+/**************************Styling af Laptop max-width 1440px******************************************/
+
+@media screen and (max-width:1440px){
+
+    /*Styling af nav*/
+    nav ul li a{
+        font-size: 1.5rem;
+    }
+
+    .logo img{
+        height: 6rem;
+    }
+
+   /*Styling af forside*/
+
+   .spoergsmaal{
+    margin-bottom: -2rem;
+   }
+   .kontaktos{
+    margin-bottom: 2rem;
+   }
+
+
+.blaa-streg p{
+    margin-left:8rem;
+}
+
+.blaa-streg img{
+    margin-left: -9rem;
+    margin-top: 6.5rem;
+}
+
+
+}
+
+/**************************************MEDIA QUERY FOR TABLET( MAX-WIDTH 1023px)****************************************/
+
+
+
+/*Media query TABLET - skærme fra 768px til 1023px (tablet)*/
+
+/*Styling af NAV BAR*/
+@media(max-width:1023px){
+
+   /*Sætterhøjde og position for logo img*/
+   .logo img {
+    height: 4rem;
+    float: left;
+  }
+
+  nav ul li a {
+    font-size: 25px;
+    text-decoration: none;
+    color: #fcfcf4;
+  }
+
+  h1 {
+    padding-top: 16px;
+  }
+
+  /*styling af brugermenu icon*/
+  .checkbtn {
+
+    display: block;
+    color: #254295;
+  }
+
+  ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background:#254295;
+      top: 80px;
+      left: 0;
+      text-align: center;
+
+  }
+
+
+
+  nav ul li {
+    display: block;
+  }
+
+    ul {
+    left: 100%;
+    transition: all 0.5s;
+    }
+
+
+  #check:checked ~ ul {
+    left: 0;
+
+  }
+
+
+
+nav ul li {
+  margin: 50px 0;
+  line-height: 30px;
+  
+  }
+
+
+nav{
+    position: fixed;
+    top: 0;
+}
+
+ /*Styling og fukntioner til ''læs mere'' og ''læs mindre''*/
+
+label{
+    display: inline-block;
+    cursor: pointer;
+    color: #254295;
+    font-family: 'Anton', sans-serif;
+    padding: 3px 13px;
+    border-radius: 3px;
+    margin-top: 12px;
+    display: block;
+    text-align: center;
+}
+
+.card{
+    background-color: #fcfcf4;
+}
+
+#ch{
+    display: none;
+}
+
+
+#ch:checked ~ .content{
+    display: block;
+}
+
+#ch:checked ~ label {
+    display: none;
+}
+.content{
+    display: none;
+}
+
+/*nummer to læs mindre*/
+#chc{
+    display: none;
+}
+
+
+#chc:checked ~ .content{
+    display: block;
+}
+
+#chc:checked ~ label {
+    display: none;
+}
+.content{
+    display: none;
+}
+
+/*nummer 3*/
+#chch{
+    display: none;
+}
+
+
+#chch:checked ~ .content{
+    display: block;
+}
+
+#chch:checked ~ label {
+    display: none;
+}
+.content{
+    display: none;
+}
+
+
+
+
+/*Syling af produkter*/
+
+
+
+.produkt-varianter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.produkter-jupiterjuice{
+    background-color: #fcfcf4;
+    width: 24.55%;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0.5rem 0.2rem;
+}
+
+
+.produkter-jupiterjuice{
+    width: 70%;
+}
+
+.produkter-julemanden{
+    width: 70%;
+}
+
+.produkter-shandy{
+    width: 70%;
+}
+
+.produkter-jupiter-link{
+    font-size: 1.5rem;
+}
+
+.produkter-julemanden-link{
+    font-size: 1.5rem;
+}
+
+.produkter-shandy-link{
+    font-size: 1.5rem;
+}
+
+.produkter-knap1{
+    margin: 0.5rem;
+}
+/*Styling af infographic*/
+
+.infographic img{
+
+       width: 100%;
+    }
+
+/*Styling af EVENTS tablet*/
+
+.under-overskrift{
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #254295;
+    margin-top: 1.5rem;
+}
+
+.event1, .event2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+}
+
+
+.events .event1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card p{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.events-billeder1 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+.kontakt-knap{
+    width: 39%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+/*Styling af Produktbeskrvelse*/
+
+.pb-start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.pb-tekst2{
+    width: 50%;
+}
+
+.pb-daase img{
+    height: 40rem;
+}
+
+.pb-navn-procent, .pb-underoverskrift{
+    font-size: 2rem;
+    justify-content: center;
+}
+
+.txt-container{
+    text-align: center;
+}
+
+.pb-tekst2 p{
+    font-size: 1.5rem;
+}
+
+.orange-streg-p{
+    font-size: 5rem;
+}
+  
+.draabe, .humle, .lemons{
+    height: 3rem;
+
+}
+
+
+/*Styling af ''Kontakt os''*/
+
+.kontakt img{
+    height: 40rem;
+}
+
+.tiderk{
+    font-size: 1.5rem;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************Media query MOBIL - skærme til og med 425px (mobil)********************************/
+
+
+
+@media screen and (max-width:425px){
+
+    /*NAV BAR*/
+
+    .logo img{
+        margin-top: -0.2rem;
+    }
+   
+
+/*Mobil forside*/
+
+.tre-daaser img{
+    height: 15rem;
+    width: 20rem;
+}
+
+.overskrift{
+    font-size: 1.7rem;
+}
+
+.orange-streg p{
+    font-size: 0.90rem;
+}
+    
+/*Ændrer billeder så de står ovenpå hinanden istedet for ved sidan af*/
+
+.billeder-forside img {
+    width: 50%;
+    margin-left: 6rem;
+}
+
+.billeder-forside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.spoergsmaal, .kontaktos{
+    font-size: 1.5rem;
+}
+
+/*Mobil - Produkter*/
+
+.overskrift-produkter{
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+    color: #254295;
+    padding-top: 8rem;
+    text-align: center;
+}
+
+.produkt-varianter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infographic img{
+    height: 35rem;
+}
+
+/*Styling af events*/
+
+.overskrift-events{
+    font-size: 2rem;
+}
+
+.event1{
+    width: 80%;
+}
+
+/*Styling af Produktbeskrivelse*/
+
+
+.pb-tekst2{
+    width: 80%;
+}
+
+.pb-daase img{
+    height: 30rem;
+    margin-top: -5rem;
+}
+
+.pb-navn-procent, .pb-underoverskrift{
+    font-size: 1rem;
+    justify-content: center;
+    margin-top: -1rem;
+}
+
+.pb-underoverskrift{
+    font-size: 1.2rem;
+    margin-top: -4rem;
+}
+
+
+.txt-container{
+    text-align: center;
+}
+
+.pb-tekst2 p{
+    font-size: 1.5rem;
+}
+
+.orange-streg-pb{
+    font-size: 5rem;
+}
+  
+.draabe, .humle, .lemons{
+    height: 3rem;
+}
+
+.pb-container{
+    justify-content: center;
+}
+
+.untappd-overskrift{
+    font-size: 1.5rem;
+}
+
+.untappd-box{
+    font-size: 1.8rem;
+}
+
+/*Styling af Kontakt Os*/
+
+.tiderk{
+    font-size: 1.2rem;
+}
+
+.kontakt img{
+    height: 25rem;
+}
+}
