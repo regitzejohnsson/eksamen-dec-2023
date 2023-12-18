@@ -645,7 +645,7 @@ footer {
 /*Media query TABLET - skærme fra 768px til 1023px (tablet)*/
 
 /*Styling af NAV BAR*/
-@media(max-width:1023px){
+@media screen and (max-width:1023px){
 
    /*Sætterhøjde og position for logo img*/
    .logo img {
